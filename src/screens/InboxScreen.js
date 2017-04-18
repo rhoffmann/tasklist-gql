@@ -1,8 +1,8 @@
 import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 
-import Inbox from './Inbox';
-import TaskList from '../TaskList';
+import Inbox from '../components/Inbox';
+import TaskList from '../components/TaskList';
 
 const withData = graphql(
   gql`
@@ -19,7 +19,7 @@ const withData = graphql(
     ${TaskList.fragments.task}
   `, {
     options: {
-      forceFetch: true,
+      fetchPolicy: 'network-only',
       pollInterval: 10 * 1000,
     },
     props({ data: { loading, error, me }}) {

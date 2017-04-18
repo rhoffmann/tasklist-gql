@@ -10,7 +10,8 @@
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-apollo": "^1.0.1",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-router-dom": "next"
   },
   "babel": {
     "presets": [

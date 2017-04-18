@@ -8,7 +8,7 @@ export default `enum TaskState {
 type Task {
   id: ID!
   title: String!
-  state: TaskSTate!
+  state: TaskState!
 
   subtitle: String
   url: String
